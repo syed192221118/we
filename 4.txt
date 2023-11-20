@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Train Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Online Train Reservation System</h2>
+
+    <form action="process_reservation.php" method="post">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required>
+
+        <label for="date">Departure Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="class">Class:</label>
+        <select id="class" name="class" required>
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="first-class">First Class</option>
+        </select>
+
+        <label for="passengers">Number of Passengers:</label>
+        <input type="number" id="passengers" name="passengers" min="1" required>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Reserve Now</button>
+    </form>
+
+</body>
+</html>
