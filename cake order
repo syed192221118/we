@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Cake Ordering System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RJH Cakes and Bakers</h1>
+        <h2>Cakes Available</h2>
+        <div class="cake-container">
+            <div class="cake-box">
+                <img src="c1.webp" alt="Choco Truffle">
+                <h3>Choco Truffle</h3>
+                <p>Rs.1200/kg</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="cake-box">
+                <img src="c2.webp" alt="Black current">
+                <h3>Black current</h3>
+                <p>Rs.1000/kg</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="cake-box">
+                <img src="c3.jpg" alt="Vanilla Layer Cake">
+                <h3>Vanilla Layer Cake</h3>
+                <p>Rs.700/kg</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <h2>Your Cart</h2>
+        <div class="cart-container">
+            <!-- Cakes will be added here when the user clicks 'Add to Cart' -->
+        </div>
+        <h2>Order Summary</h2>
+        <div class="summary-container">
+            <!-- Total amount and checkout button will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>
